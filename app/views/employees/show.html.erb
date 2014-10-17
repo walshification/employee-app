@@ -1,0 +1,54 @@
+<h1>Profile </h1>
+
+<h2><%= @employee.last_name %>, <%= @employee.first_name %></h2>
+
+<table>
+  <tr>
+    <td>
+      <strong>Job Title:</strong>
+    </td>
+    <td>
+      <%= @employee.job_title %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Email:</strong>
+    </td>
+    <td>
+      <%= @employee.email %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Phone Number:</strong>
+    </td>
+    <td>
+      <%= @employee.phone_number %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Salary:</strong>
+    </td>
+    <td>
+      <%= @employee.salary %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Gender:</strong>
+    </td>
+    <td>
+      <%= @employee.gender %>
+    </td>
+  </tr>
+</table>
+
+<a href="/employees/<%= @employee.id %>/edit">edit</a>
+
+<footer>
+  <hr>
+  <p><a href='/'>See the employee list!</a></p>
+  <p><a href='/employees/new'>Hire someone else!</a></p>
+</footer>

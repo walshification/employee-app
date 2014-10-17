@@ -1,0 +1,35 @@
+<h1>We're here to take you HIRE!</h1>
+
+<%= form_for @employee do |f| %>
+  <div>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+
+    <%= f.label :job_title %>
+    <%= f.text_field :job_title %>
+
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %>
+
+    <%= f.label :salary %>
+    <%= f.text_field :salary %>
+
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>  
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<footer>
+  <hr>
+  <p><a href='/index.html'>See the employee list!</a></p>
+  <p><a href='/'>Hire someone else!</a></p>
+</footer>

@@ -1,0 +1,31 @@
+<h1>Employees List</h1>
+
+<table>
+  <thead>
+    <th>
+      Employee
+    </th>
+    <th>
+      Job Title
+    </th>
+  </thead>
+  <tbody>
+    <% @employees.each do |employee| %>
+      <tr>
+        <td>
+          <a href="/employees/<%= employee.id %>">
+            <%= employee.last_name %>, <%= employee.first_name %>
+          </a>
+        </td>
+        <td>
+          <%= employee.job_title%>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<footer>
+  <hr>
+  <a href='/employees/new'>Hire someone else!</a>
+</footer>

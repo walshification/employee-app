@@ -1,0 +1,44 @@
+<h1>Edit Employee Profile</h1>
+
+<h2><%= @employee.last_name %>, <%= @employee.first_name %></h2>
+
+<%= form_for @employee do |f| %>
+  <div>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </div>
+  <div>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+  <div>
+    <%= f.label :job_title %>
+    <%= f.text_field :job_title %>
+  </div>
+  <div>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div>
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %>
+  </div>
+  <div>
+    <%= f.label :salary %>
+    <%= f.text_field :salary %>
+  </div>
+  <div>
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>  
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<footer>
+  <hr>
+  <p><a href='/'>See the employee list!</a></p>
+  <p><a href='/employees/new'>Hire someone else!</a></p>
+</footer>
+
